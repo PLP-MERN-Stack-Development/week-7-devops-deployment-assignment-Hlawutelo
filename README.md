@@ -1,72 +1,149 @@
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-2e0aaae1b6195c2367325f4f02e2d04e9abb55f0b24a779b69b11b9e10269abc.svg)](https://classroom.github.com/online_ide?assignment_repo_id=19942089&assignment_repo_type=AssignmentRepo)
-# Deployment and DevOps for MERN Applications
+To-Do MERN App — Deployment and DevOps Guide
+This project is a full-stack To-Do application built with the MERN stack (MongoDB, Express, React, Node.js). This assignment focuses on deploying the app to production, implementing CI/CD pipelines, and setting up monitoring to ensure reliability.
 
-This assignment focuses on deploying a full MERN stack application to production, implementing CI/CD pipelines, and setting up monitoring for your application.
+Project Overview
+In this assignment, you will:
 
-## Assignment Overview
+Prepare the To-Do MERN app for production
 
-You will:
-1. Prepare your MERN application for production deployment
-2. Deploy the backend to a cloud platform
-3. Deploy the frontend to a static hosting service
-4. Set up CI/CD pipelines with GitHub Actions
-5. Implement monitoring and maintenance strategies
+Deploy the backend API (Express + MongoDB) to a cloud platform (Render, Railway, or Heroku)
 
-## Getting Started
+Deploy the frontend (React) to a static hosting service (Vercel, Netlify, or GitHub Pages)
 
-1. Accept the GitHub Classroom assignment invitation
-2. Clone your personal repository that was created by GitHub Classroom
-3. Follow the setup instructions in the `Week7-Assignment.md` file
-4. Use the provided templates and configuration files as a starting point
+Configure continuous integration and deployment (CI/CD) using GitHub Actions
 
-## Files Included
+Set up monitoring and maintenance strategies
 
-- `Week7-Assignment.md`: Detailed assignment instructions
-- `.github/workflows/`: GitHub Actions workflow templates
-- `deployment/`: Deployment configuration files and scripts
-- `.env.example`: Example environment variable templates
-- `monitoring/`: Monitoring configuration examples
+Getting Started
+Accept the GitHub Classroom assignment invitation
 
-## Requirements
+Clone your assigned repository
 
-- A completed MERN stack application from previous weeks
-- Accounts on the following services:
-  - GitHub
-  - MongoDB Atlas
-  - Render, Railway, or Heroku (for backend)
-  - Vercel, Netlify, or GitHub Pages (for frontend)
-- Basic understanding of CI/CD concepts
+Follow the instructions in Week7-Assignment.md for setup
 
-## Deployment Platforms
+Use the provided .github/workflows templates for CI/CD
 
-### Backend Deployment Options
-- **Render**: Easy to use, free tier available
-- **Railway**: Developer-friendly, generous free tier
-- **Heroku**: Well-established, extensive documentation
+Review .env.example for required environment variables
 
-### Frontend Deployment Options
-- **Vercel**: Optimized for React apps, easy integration
-- **Netlify**: Great for static sites, good CI/CD
-- **GitHub Pages**: Free, integrated with GitHub
+Project Structure
+server/ — Express backend API code
 
-## CI/CD Pipeline
+react-todo-frontend/ — React frontend code
 
-The assignment includes templates for setting up GitHub Actions workflows:
-- `frontend-ci.yml`: Tests and builds the React application
-- `backend-ci.yml`: Tests the Express.js backend
-- `frontend-cd.yml`: Deploys the frontend to your chosen platform
-- `backend-cd.yml`: Deploys the backend to your chosen platform
+.github/workflows/ — CI/CD workflow configurations
 
-## Submission
+deployment/ — Deployment-related scripts and configs
 
-Your work will be automatically submitted when you push to your GitHub Classroom repository. Make sure to:
+monitoring/ — Monitoring setup examples
 
-1. Complete all deployment tasks
-2. Set up CI/CD pipelines with GitHub Actions
-3. Deploy both frontend and backend to production
-4. Document your deployment process in the README.md
-5. Include screenshots of your CI/CD pipeline in action
-6. Add URLs to your deployed applications
+.env.example — Sample environment variables
+
+Requirements
+Fully functional To-Do MERN application with backend and frontend working locally
+
+Accounts on:
+
+GitHub (for source control and CI/CD)
+
+MongoDB Atlas (for database hosting)
+
+Render, Railway, or Heroku (for backend deployment)
+
+Vercel, Netlify, or GitHub Pages (for frontend deployment)
+
+Basic understanding of CI/CD concepts and environment variable management
+
+Deployment Platforms
+Backend
+Render (recommended for ease and free tier)
+
+Railway
+
+Heroku
+
+Frontend
+Vercel (recommended for React apps)
+
+Netlify
+
+GitHub Pages
+
+CI/CD Pipeline
+Use the provided GitHub Actions workflow templates:
+
+frontend-ci.yml: Runs React tests and builds the frontend
+
+backend-ci.yml: Runs backend tests
+
+frontend-cd.yml: Automatically deploys frontend on push
+
+backend-cd.yml: Automatically deploys backend on push
+
+Monitoring and Maintenance
+Implement health check endpoints in the backend
+
+Use uptime monitoring services like UptimeRobot or Pingdom
+
+(Optional) Integrate error tracking with Sentry for both frontend and backend
+
+Schedule regular backups of your MongoDB Atlas database
+
+Document deployment and rollback procedures
+
+Environment Variables
+Sample .env.example:
+
+env
+Copy
+Edit
+# Backend
+PORT=5000
+MONGODB_URI=mongodb+srv://<username>:<password>@cluster.mongodb.net/todo-app
+
+# Frontend (if needed)
+REACT_APP_API_URL=https://your-backend-url.com
+Running Locally
+Backend:
+
+bash
+Copy
+Edit
+cd server
+npm install
+npm run dev
+Frontend:
+
+bash
+Copy
+Edit
+cd react-todo-frontend
+npm install
+npm start
+Make sure the backend is running before using the frontend locally.
+
+Live Deployment URLs
+Frontend: https://your-frontend-url
+
+Backend API: https://your-backend-url
+
+Screenshots
+(Add screenshots of your CI/CD pipeline, frontend UI, and backend logs here)
+
+Resources
+GitHub Actions
+
+MongoDB Atlas
+
+Render
+
+Vercel
+
+Netlify
+
+Contact
+For any questions or assistance, please reach out!
+
+
 
 ## Resources
 

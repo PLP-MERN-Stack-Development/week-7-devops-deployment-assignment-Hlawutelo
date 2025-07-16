@@ -1,0 +1,123 @@
+/* Base styling */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 60px;
+  min-height: 100vh;
+  transition: background 0.5s ease-in-out;
+}
+
+/* App container */
+.app {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.app:hover {
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.2);
+}
+
+/* Title */
+h1 {
+  text-align: center;
+  color: #333;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Form */
+.add-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 25px;
+  transition: all 0.3s ease;
+}
+
+.todo-input {
+  flex-grow: 1;
+  padding: 0.8rem 1rem;
+  font-size: 1rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 12px;
+  transition: border-color 0.2s ease;
+}
+
+.todo-input:focus {
+  border-color: #74ebd5;
+  outline: none;
+}
+
+.add-btn {
+  padding: 0.8rem 1.2rem;
+  background-color: #4caf50;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-btn:hover {
+  background-color: #45a049;
+}
+
+/* List */
+.todo-list {
+  list-style: none;
+  padding: 0;
+}
+
+/* Todo item */
+.todo-item {
+  background: #f9f9f9;
+  margin: 12px 0;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease-in-out;
+}
+
+.todo-item:hover {
+  transform: scale(1.02);
+}
+
+.todo-item.completed span {
+  text-decoration: line-through;
+  color: #999;
+}
+
+.todo-item span {
+  flex-grow: 1;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.todo-item button {
+  background-color: #ff4d4d;
+  border: none;
+  color: white;
+  padding: 0.5rem 0.8rem;
+  font-size: 0.9rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.todo-item button:hover {
+  background-color: #e60000;
+}
